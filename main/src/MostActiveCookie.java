@@ -11,9 +11,9 @@ import java.util.*;
 public class MostActiveCookie {
 
     /**
-     * Hash map that stores dates as keys and a list of CookieTimes as values.
-     * This allows us to easily query the cookies for a given day and then
-     * calculate the most active cookie from that list.
+     * Linked hash map (to preserve sorting of the log) that stores dates as keys 
+     * and a list of CookieTimes as values. This allows us to easily query the cookies
+     * for a given day and then calculate the most active cookie from that list.
      */
     private static LinkedHashMap<LocalDate, ArrayList<CookieTime<String, LocalTime>>> dateMap = new LinkedHashMap<>();
 
